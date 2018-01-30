@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rybka2" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #99e9fb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#104d86" height="500.0" layoutX="50.0" layoutY="1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#104d86" height="500.0" layoutX="131.0" layoutY="89.0" stroke="TRANSPARENT" strokeType="INSIDE" width="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#104d86" height="15.0" layoutX="108.0" layoutY="143.0" stroke="TRANSPARENT" strokeType="INSIDE" width="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Group fx:id="ryba2" layoutX="-40.0" layoutY="43.0">
+         <children>
+            <Polygon fx:id="ogon1" fill="#ff5500" layoutX="85.0" layoutY="131.0" rotate="90.0" scaleX="0.3" scaleY="0.6" stroke="TRANSPARENT" strokeType="INSIDE">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Ellipse layoutX="123.0" layoutY="120.0" radiusX="46.0" radiusY="18.0" stroke="#9bfad900" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff5500" />
+                        <Stop color="#01f23d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Ellipse>
+            <Circle fill="#171717" layoutX="153.0" layoutY="120.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Group>
+      <Group fx:id="ryba1" layoutX="308.0" layoutY="215.0" rotate="180.0">
+         <children>
+            <Polygon fx:id="ogon2" fill="#0035ff" layoutX="85.0" layoutY="131.0" rotate="90.0" scaleX="0.3" scaleY="0.6" stroke="TRANSPARENT" strokeType="INSIDE">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Ellipse layoutX="131.0" layoutY="122.0" radiusX="46.0" radiusY="18.0" stroke="#9bfad900" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0035ff" />
+                        <Stop color="#f700a5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Ellipse>
+            <Circle fill="#171717" layoutX="161.0" layoutY="123.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Group>
+      <Line endY="80.0" layoutX="349.0" layoutY="400.0" stroke="#684747" strokeWidth="10.0" />
+      <Line endY="80.0" layoutX="357.0" layoutY="400.0" startX="10.0" stroke="#684747" strokeWidth="10.0" />
+      <Line endY="80.0" layoutX="340.0" layoutY="400.0" startX="-10.0" stroke="#684747" strokeWidth="10.0" />
+      <Line endY="50.0" layoutX="328.0" layoutY="344.0" stroke="#37bc1d" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endY="50.0" layoutX="349.0" layoutY="344.0" stroke="#37bc1d" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endY="50.0" layoutX="368.0" layoutY="344.0" stroke="#37bc1d" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endY="50.0" layoutX="327.0" layoutY="344.0" startX="-10.0" stroke="#37bc1d" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endY="60.0" layoutX="349.0" layoutY="334.0" startX="-10.0" stroke="#37bc1d" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endY="50.0" layoutX="368.0" layoutY="344.0" startX="-10.0" stroke="#37bc1d" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endY="50.0" layoutX="330.0" layoutY="344.0" startX="10.0" stroke="#37bc1d" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endY="60.0" layoutX="350.0" layoutY="334.0" startX="10.0" stroke="#37bc1d" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endY="50.0" layoutX="369.0" layoutY="344.0" startX="10.0" stroke="#37bc1d" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Button layoutX="420.0" layoutY="-1.0" mnemonicParsing="false" onAction="#closeStage" style="-fx-background-color: #2fbdda;" text="Close" />
+      <Circle fx:id="bubble" fill="DODGERBLUE" layoutX="412.0" layoutY="303.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+   </children>
+</AnchorPane>
